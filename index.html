@@ -8,27 +8,34 @@
 	<title>artes da patty</title>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 		body{
 			background-image: linear-gradient(to top, rgb(252, 5, 157),rgba(236, 252, 11, 0.986), white);
 		}
+		header{
+			text-align: center;
+			font-family: 'Handlee', cursive;
+			box-shadow: 3px 3px 5px black;
+			padding: 10px;
+			border-radius: 20px;
+			width: fit-content;
+			display: block;
+			margin: auto;
+			align-items: center;
+
+		}
+	
+		
+		 .escondido{
+			display: none;
+		 }
+		 .contato:hover >.escondido{
+			display: block;
+		 }
 		
     	
-		nav{
-			margin: 20px;
-			text-align: center;
-		}
 		
-		ul  {
-			display: none;
-		}
-		nav:hover > ul {
-			 display: block;
-			 text-align: center;
-			 
-		}
-		
-		
-		.container {
+		main{
 			align-items: center;
 			display: flex;
 			justify-content: center;
@@ -43,10 +50,20 @@
 			margin: 20px;
 			text-align: center;
 			
+			
+		}
+		.descriçao{
+			text-align: justify;
+			
+		}
+		.descriçao > h2{
+			text-align: center;
+		}
+		.descriçao > a{
+			text-align: center;
 		}
 		.produto:hover{
 			transform: scale(1.08);
-			background-color: rgba(255, 255, 255, 0.288);
 			border-radius: 30px;
 		}
 
@@ -64,30 +81,27 @@
 			color: white;
 			padding: 20px;
 			border-radius: 10px;
-			text-decoration: solid;
-			margin: auto;
 			margin-top: 10px;
+			box-shadow: 2px 2px 3px black;
 			
 		}
 		.btn-whatsapp:hover{
-			border: 1px solid white;
+			
+			box-shadow: inset 2px 2px 3px black;
 		}
-		h1{
-			text-shadow: 1px 1px 10px rgb(252, 5, 157);
-			font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-			text-align: center;
-
-		}
+		
 		.produto >h2 >p{
 			text-align: right;
 		}
 		footer{
-			background-color: rgba(255, 250, 250, 0.438);
-			border-radius: 20px;
-			align-items: center;
+			background-color: rgba(255, 250, 250, 0.123);
+			border-radius: 5px;
+			padding-left: 5px;
+			display: grid;
+			align-content: center;
+			
 		}
 		footer > p,a{
-			text-align: center;
 			text-decoration: none;
 			color:inherit;
 		}
@@ -97,62 +111,70 @@
 </head>
 <body>
 	<header>
-		<nav><a href="#">contato</a>
-			
-				<ul>facebook</ul> 
-				<ul>WhatsApp</ul>
-				<ul>instagram</ul>
-			
-		<a href="#">mais fotos</a>
-		<a href="#">orçamentos</a></nav>
+	<h1>loja da patty</h1>
 		
 	</header>
 	
-	<div class="container"> 
+	<main>
 		<div class="produto">
 			
 			<img src="kit banheiro.jpg"> 
-			<h2>kit banheiro </h2><p>1 tampa de vaso<br> 1 porta papel higiênico <br>1 tapete frente pia <br>1 tapete pe do vaso</p>
-			<p ><del style="background-color: red;">R$ 199,90</del></p>
-			<p > R$165,00</ins></p>
-			<a href="https://wa.me/55051999067650?text=Olá! Gostaria de comprar o kit banheiro." class="btn-whatsapp" target="_blank">Comprar pelo WhatsApp</a> 
+			<div class="descriçao">
+				<h2>kit banheiro </h2>
+				<p>1 tampa de vaso<br> 1 porta papel higiênico <br>1 tapete frente pia <br>1 tapete pe do vaso <</p>
+				<p ><del style="background-color: red;">R$ 199,90</del></p>
+				<p > R$165,00</ins></p>
+				<a href="https://wa.me/55051999067650?text=Olá! Gostaria de comprar o kit banheiro." class="btn-whatsapp" target="_blank">Comprar pelo WhatsApp</a>
+			</div>
+			
 		</div>
 		<div class="produto">
 			<img src="joaninha.jpg" alt="Produto de Crochê">
-			<h2 >kit joaninha</h2>
-			<p>1 tampa de vaso<br> 1 porta papel higiênico <br>1 tapete frente pia <br>1 tapete pe do vaso</p>
-			<p ><del style="background-color: red;">R$ 199,90</del></p>
-			<p > R$165,00</ins></p>
-			<a href="https://wa.me/55051999067650" class="btn-whatsapp"target="_blank">Comprar pelo WhatsApp</a>
+			<div class="descriçao">
+				<h2 >kit joaninha</h2>
+				<p>1 tampa de vaso<br> 1 porta papel higiênico <br>1 tapete frente pia <br>1 tapete pe do vaso</p>
+				<p ><del style="background-color: red;">R$ 199,90</del></p>
+				<p > R$165,00</ins></p>
+				<a href="https://wa.me/55051999067650" class="btn-whatsapp"target="_blank">Comprar pelo WhatsApp</a>
+			</div>
 		</div>
 		<div class="produto">
 			<img src="sousplat vermelho.jpg" alt="Produto de Crochê">
+			<div class="descriçao">
 			<h2 >kit joaninha</h2>
 			<p>1 tampa de vaso<br> 1 porta papel higiênico <br>1 tapete frente pia <br>1 tapete pe do vaso</p>
 			<p ><del style="background-color: red;">R$ 199,90</del></p>
 			<p > R$165,00</ins></p>
 			<a href="https://wa.me/55051999067650" class="btn-whatsapp"target="_blank">Comprar pelo WhatsApp</a>
+		</div>
 		</div>
 		<div class="produto">
 			<img src="joaninha.jpg" alt="Produto de Crochê">
+			<div class="descriçao">
 			<h2 >kit joaninha</h2>
 			<p>1 tampa de vaso<br> 1 porta papel higiênico <br>1 tapete frente pia <br>1 tapete pe do vaso</p>
 			<p ><del style="background-color: red;">R$ 199,90</del></p>
 			<p > R$165,00</ins></p>
 			<a href="https://wa.me/55051999067650" class="btn-whatsapp"target="_blank">Comprar pelo WhatsApp</a>
 		</div>
+		</div>
 		<div class="produto">
 			<img src="sousplat azul.jpg" alt="Produto de Crochê">
+			<div class="descriçao">
 			<h2>sousplat azul </h2>
-			<p> sousplat pode ser usado como; <br> apoio de copo <br>apoio de prato <br>apoio de panela </p>
+			<p> <br>apoio de copo <br>apoio de prato <br>apoio de panela</p>
 			<p ><del style="background-color: red;">R$ 79,90</del></p>
 			<p >R$ 40,00 </ins></p>
 			<a href="https://wa.me/55051999067650" class="btn-whatsapp"target="_blank">Comprar pelo WhatsApp</a>
-			
+			</div>
 			
 		</div>
-	</div>
+	</main>
 	<footer>
+	
+		<div class="contato"> <p>contatos:</p>
+			<div class="escondido"> <a href="https://www.instagram.com/art_esdapatty/" target="_blank">instagram</a> <br> <a href="https://www.facebook.com/patty.schweig/" target="_blank">facebook</a> <br> <a href="https://dinho.a.schmidt@hotmail.com" target="_blank">e-mail</a> <br> <a href="https://wa.me/55051999067650" target="_blank">WhatsApp</a></div>
+		</div>
 		<p >desenvolvido por <a href="https://www.instagram.com/edinho_schmidt/" target="_blank">Edson Schmidt</a></p>
 	</footer>
 	
